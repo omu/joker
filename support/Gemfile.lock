@@ -1,0 +1,66 @@
+PATH
+  remote: .
+  specs:
+    support (0.1.0)
+      activesupport (>= 6.0.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activesupport (6.1.0)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      tzinfo (~> 2.0)
+      zeitwerk (~> 2.3)
+    ast (2.4.1)
+    concurrent-ruby (1.1.7)
+    i18n (1.8.5)
+      concurrent-ruby (~> 1.0)
+    minitest (5.14.2)
+    parallel (1.20.1)
+    parser (2.7.2.0)
+      ast (~> 2.4.1)
+    rainbow (3.0.0)
+    rake (13.0.1)
+    regexp_parser (2.0.0)
+    rexml (3.2.4)
+    rubocop (1.3.1)
+      parallel (~> 1.10)
+      parser (>= 2.7.1.5)
+      rainbow (>= 2.2.2, < 4.0)
+      regexp_parser (>= 1.8)
+      rexml
+      rubocop-ast (>= 1.1.1)
+      ruby-progressbar (~> 1.7)
+      unicode-display_width (>= 1.4.0, < 2.0)
+    rubocop-ast (1.3.0)
+      parser (>= 2.7.1.5)
+    rubocop-minitest (0.10.1)
+      rubocop (>= 0.87)
+    rubocop-performance (1.9.1)
+      rubocop (>= 0.90.0, < 2.0)
+      rubocop-ast (>= 0.4.0)
+    rubocop-rake (0.5.1)
+      rubocop
+    ruby-progressbar (1.10.1)
+    tzinfo (2.0.4)
+      concurrent-ruby (~> 1.0)
+    unicode-display_width (1.7.0)
+    zeitwerk (2.4.2)
+
+PLATFORMS
+  ruby
+  x86_64-linux
+
+DEPENDENCIES
+  minitest (~> 5.0)
+  rake (~> 13.0)
+  rubocop (~> 1.3.0)
+  rubocop-minitest
+  rubocop-performance
+  rubocop-rake
+  support!
+
+BUNDLED WITH
+   2.2.0
