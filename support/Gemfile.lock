@@ -3,6 +3,7 @@ PATH
   specs:
     support (0.1.0)
       activesupport (>= 6.0.0)
+      zeitwerk (~> 2.4.0)
 
 GEM
   remote: https://rubygems.org/

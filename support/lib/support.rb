@@ -1,14 +1,12 @@
 # frozen_string_literal: true
 
-# frozen_string_literal: true
-
+require 'zeitwerk'
 require 'active_support/all'
+require_relative './support/core_ext'
 
-require_relative 'support/version'
-require_relative 'support/core_ext'
-require_relative 'support/sensitive'
-require_relative 'support/rest_client'
-require_relative 'support/minitest'
+loader = Zeitwerk::Loader.for_gem
+loader.ignore(File.join(__dir__, 'support/core_ext'))
+loader.setup
 
 module Support
   class Error < StandardError; end

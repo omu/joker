@@ -23,4 +23,5 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = Gem::Requirement.new('>= 2.5.0')
 
   spec.add_dependency 'activesupport', '>= 6.0.0'
+  spec.add_dependency 'zeitwerk', '~> 2.4.0 '
 end
