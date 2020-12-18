@@ -1,6 +1,9 @@
-name: Ruby
+name: Support
 
-on: [push,pull_request]
+on:
+  push:
+    paths:
+      - 'support/**'
 
 jobs:
   support-test:
@@ -19,4 +22,3 @@ jobs:
         gem install bundler -v 2.2.0
         bundle install
         bundle exec rake
-      
