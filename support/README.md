@@ -34,4 +34,4 @@ N/A
 
 ## Code of Conduct
 
-Everyone interacting in the Support project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/omu/joker/blob/master/support/CODE_OF_CONDUCT.md).
+Everyone interacting in the Support project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/omu/joker/blob/main/support/CODE_OF_CONDUCT.md).
