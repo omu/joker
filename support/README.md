@@ -1,5 +1,7 @@
 # Support
 
+[![Support](https://github.com/omu/joker/workflows/Support/badge.svg)](https://github.com/omu/joker/actions?query=workflow%3ASupport)
+
 
 
 ## Installation
