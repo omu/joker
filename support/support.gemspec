@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
     'source_code_uri' => 'https://github.com/omu/joker/tree/master'
   }
 
-  spec.files   = Dir['lib/**/*', 'LICENSE.md', 'CHANGELOG.md', 'Rakefile']
+  spec.files = Dir['lib/**/*', 'LICENSE.md', 'CHANGELOG.md', 'Rakefile']
   spec.test_files = Dir['test/**/*.rb']
   spec.required_ruby_version = Gem::Requirement.new('>= 2.5.0')
 
