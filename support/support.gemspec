@@ -14,8 +14,9 @@ Gem::Specification.new do |spec|
   spec.metadata = {
     'homepage_uri'    => spec.homepage,
     'bug_tracker_uri' => 'https://github.com/omu/joker/issues',
-    'changelog_uri'   => 'https://github.com/omu/joker/blob/master/CHANGELOG.md',
-    'source_code_uri' => 'https://github.com/omu/joker/tree/master'
+    'changelog_uri'   => 'https://github.com/omu/joker/blob/main/CHANGELOG.md',
+    'source_code_uri' => 'https://github.com/omu/joker/tree/master',
+    'github_repo'     => 'ssh://github.com/omu/joker'
   }
 
   spec.files = Dir['lib/**/*', 'LICENSE.md', 'CHANGELOG.md', 'Rakefile']
