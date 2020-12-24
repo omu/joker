@@ -3,23 +3,15 @@
 [![Support](https://github.com/omu/joker/workflows/Support/badge.svg)](https://github.com/omu/joker/actions?query=workflow%3ASupport)
 
 
-
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'support', github: 'omu/support'
+source "https://rubygems.pkg.github.com/omu" do
+  gem "omu-support", "0.1.0"
+end
 ```
-
-And then execute:
-
-    $ bundle install
-
-Or install it yourself as:
-
-    $ gem install support
-
 ## Usage
 
 N/A
