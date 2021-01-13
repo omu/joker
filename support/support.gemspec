@@ -22,6 +22,7 @@ Gem::Specification.new do |spec|
   spec.files = Dir['lib/**/*', 'LICENSE.md', 'CHANGELOG.md', 'Rakefile']
   spec.test_files = Dir['test/**/*.rb']
   spec.required_ruby_version = Gem::Requirement.new('>= 2.5.0')
+  spec.require_paths = ['lib']
 
   spec.add_dependency 'activesupport', '>= 6.0.0'
 end
