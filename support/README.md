@@ -1,15 +1,19 @@
 # Support
 
 [![Support](https://github.com/omu/joker/workflows/Support/badge.svg)](https://github.com/omu/joker/actions?query=workflow%3ASupport)
-
+[![omu-support](https://badge.fury.io/rb/omu-support.svg)](https://rubygems.org/gems/omu-support)
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-source "https://rubygems.pkg.github.com/omu" do
-  gem "omu-support", "0.1.0"
+gem 'omu-support'
+
+# or 
+
+source 'https://rubygems.pkg.github.com/omu' do
+  gem 'omu-support', '0.1.2'
 end
 ```
 ## Usage
