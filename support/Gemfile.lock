@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    omu-support (0.1.0)
+    omu-support (0.1.2)
       activesupport (>= 6.0.0)
 
 GEM
