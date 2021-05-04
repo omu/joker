@@ -17,6 +17,7 @@ class StructTest < ActiveSupport::TestCase
 
     instance = TestStruct.from_hash(data)
 
+    assert_equal instance.id, data[:id]
     assert_equal instance.key, data[:key]
     assert_equal instance.value, data[:value]
     assert_raise(NoMethodError) { instance.created_at }
