@@ -8,6 +8,9 @@ on:
 jobs:
   support-test:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        ruby-version: ['2.5', '2.7', '3.0']
     env:
       support-directory: ./support
     steps:
@@ -15,10 +18,9 @@ jobs:
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: 2.5.0
+        ruby-version: ${{ matrix.ruby-version }}
+        bundler-cache: true
     - name: Run the default task
       working-directory: ${{env.support-directory}}
       run: |
-        gem install bundler -v 2.2.0
-        bundle install
         bundle exec rake
