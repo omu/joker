@@ -4,13 +4,11 @@ on:
   push:
     paths:
       - 'support/**'
+      - '.github/**'
 
 jobs:
   support-test:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        ruby-version: ['2.5', '2.7', '3.0']
     env:
       support-directory: ./support
     steps:
@@ -18,9 +16,9 @@ jobs:
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: ${{ matrix.ruby-version }}
-        bundler-cache: true
+        ruby-version: 2.5.0
     - name: Run the default task
       working-directory: ${{env.support-directory}}
       run: |
-        bundle exec rake
+        bundle install
+        bundle exec rubocop
