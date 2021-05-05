@@ -16,9 +16,9 @@ jobs:
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: 2.5.0
+        ruby-version: 2.6.0
     - name: Run the default task
       working-directory: ${{env.support-directory}}
       run: |
         bundle install
-        bundle exec rubocop
+        bundle exec rake
