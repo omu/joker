@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'support/**'
+      - '.github/**'
 
 jobs:
   support-test:
@@ -15,10 +16,9 @@ jobs:
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: 2.5.0
+        ruby-version: 2.6.0
     - name: Run the default task
       working-directory: ${{env.support-directory}}
       run: |
-        gem install bundler -v 2.2.0
         bundle install
         bundle exec rake

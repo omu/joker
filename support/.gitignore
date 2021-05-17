@@ -8,3 +8,4 @@
 /tmp/
 /.rubocop-*-yml
 vendor/*
+/.byebug_history

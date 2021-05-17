@@ -16,6 +16,7 @@ source 'https://rubygems.pkg.github.com/omu' do
   gem 'omu-support', '0.1.2'
 end
 ```
+
 ## Usage
 
 N/A
